@@ -844,9 +844,9 @@ a:focus {
     right: 0;
     left: 0;
     height: 100vh;
-    opacity: 0;
     pointer-events: none;
-    transition: opacity .25s;
+    transition: transform .25s ease;
+   
    
 }
 
@@ -863,8 +863,19 @@ a:focus {
     margin-bottom: 16px;
 }
 
-.c-mobile-nav__bg {
 
+.c-page {
+    transition: transform .25s ease;
+}
+
+.c-mobile-nav__bg {
+    background-color: #202024;
+    transition: opacity .25s ease ;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
 }
 
 .has-mobile-nav .c-mobile-nav__bg {
